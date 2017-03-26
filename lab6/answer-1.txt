@@ -1,0 +1,4 @@
+1.The maximum possible entropy for data of ‘base64’ encoding is 6. 
+
+2.Entropy is used to measure transfer speed of information in a particular message or language. The maximum entropy occurs when all the bytes are equally likely. General formula for getting maximum entropy with different base:
+	H(x)=-log2(1/base), since the sum of probability is equal to 1.

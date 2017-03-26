@@ -1,0 +1,4 @@
+1. If the chucksize is the same as packetsize, when the packet is added some text, the packet gets larget and some bits cannot be received.
+2. checksum is used to check if the received packet is the same as when it was sent.It is used for error detection.
+3. serialization is to convert a dictionary to a string, and deserialization is to convert a string to a dictionary.
+4. Add a timeout value so that if the client does not receive the acknowledge message for a certain time, it sends the same packet again to the server; For the server, if the same packet is received, ignore the packet because it was received before, and then send the acknowledge message again to the client because the previous one may be lost.

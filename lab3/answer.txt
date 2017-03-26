@@ -1,0 +1,8 @@
+Songjie Cai
+COEN 146 Lab3 
+1. What does socket.connect() do in context of UDP?
+ 
+There are multiple reasons explaining why people use socket.connect() system call in context of UDP sockets. These reasons actually depend on the different approaches. For instance, if you just want to send a message or a file to a host, you can eliminate this connect() function in your program, or keep it just in case that you entered an invalid host address, but it does not matter a lot since UDP is designed to be connectionless. However, if you decided to specify a new IP address and port or unconnect the socket, connect() function is pretty useful because you can call it again by using different parameters to achieve these two goals.
+2. Explain socket.send() vs. socket.sendto() in context of UDP. 
+  
+Both function send data to a socket. However, send() is used for TCP sockets while sendto() is used for UDP sockets. The last parameters of sendto()define where the packet is going because we must specify the destination of a packet each time we send one. 
